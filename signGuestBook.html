@@ -1,0 +1,218 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<html>
+
+<head>
+	<title>Simple Web 1.0 Website</title>
+
+	<script>
+		function adjustFooter() {
+			var footer = document.getElementById("footer");
+			var content = document.getElementById("content");
+			var windowHeight = window.innerHeight;
+			var contentHeight = content.offsetHeight;
+
+			if (contentHeight < windowHeight) {
+				footer.style.position = "absolute";
+				footer.style.bottom = "10";
+				footer.style.width = "99%";
+			} else {
+				footer.style.position = "static";
+			}
+		}
+
+		window.onload = function () {
+			adjustFooter();
+		};
+
+		window.onresize = adjustFooter;
+	</script>
+</head>
+
+<body bgcolor="#8D909B">
+	<!-- Header Table -->
+	<table width="100%" border="1" cellpadding="10" cellspacing="0" bgcolor="#CCCCCC">
+		<tr>
+			<td align="center" valign="middle">
+				<img src="./images/bizzar-0world2a.gif" alt="Animated GIF 2" border="0">
+			</td>
+
+			<td align="center" valign="middle" width="33%">
+				<table cellpadding="0" cellspacing="0">
+					<tr>
+						<td align="center" valign="middle">
+							<font face="Arial" size="4" color="#000000">
+								<b>Andrei`s Travel Blog</b>
+							</font>
+						</td>
+					</tr>
+					<tr>
+						<td valign="middle">
+							<img src="./images/underconstruction3.gif" alt="Animated GIF 1" border="0">
+							<!-- <img src="./images/travelingcar2.gif" alt="Your Image Description" border="0"> -->
+
+						</td>
+					</tr>
+				</table>
+			</td>
+
+			<!-- </td> -->
+			<td align="center" valign="middle">
+				<img src="./images/bizzar-0world2a.gif" alt="Animated GIF 1" border="0">
+			</td>
+		</tr>
+	</table>
+
+	<!-- Main Content Table -->
+	<table id="content" width="100%" height="80%" cellpadding="0" cellspacing="0">
+		<tr>
+			<td height="10"></td>
+		</tr>
+		<tr align="center" valign="middle">
+			<td valign="top" width="15%">
+				<!-- Sidebar -->
+				<table valign="top" width="100%" height="100%" border="1" cellpadding="10" cellspacing="0"
+					bgcolor="#CCCCCC">
+					<tr valign="top">
+						<td align="center">
+							<font face="Arial" size="5" color="#000000">
+								<b>Menu</b><br>
+							</font>
+							<font face="Arial" size="4" color="#000000">
+								<a href="mainPage.html">
+									<table width="150" border="1" cellpadding="3" cellspacing="0" bgcolor="#008CBA">
+										<tr>
+											<td align="center" valign="middle">
+												<font face="Arial" size="3" color="#FFFFFF">
+													Home
+												</font>
+											</td>
+										</tr>
+									</table>
+								</a>
+
+								<table>
+									<tr>
+										<td height="2"></td>
+									</tr>
+								</table>
+
+
+								<a href="aboutPage.html">
+									<table width="150" border="1" cellpadding="3" cellspacing="0" bgcolor="#008CBA">
+										<tr>
+											<td align="center" valign="middle">
+												<font face="Arial" size="3" color="#FFFFFF">
+													About
+												</font>
+											</td>
+										</tr>
+									</table>
+								</a>
+
+								<table>
+									<tr>
+										<td height="350"></td>
+									</tr>
+								</table>
+
+
+
+								<table>
+									<tr>
+										<td height="2"></td>
+									</tr>
+								</table>
+						</td>
+						</font>
+					</tr>
+				</table>
+			</td>
+			<td valign="top" width="80%">
+				<!-- Main Content -->
+				<table width="100%" cellpadding="10" cellspacing="0">
+					<tr>
+						<td>
+							<table width="100%" cellpadding="0" cellspacing="0">
+								<tr>
+									<td align="center" valign="middle">
+										<font face="Arial" size="5" color="#000000">
+											I would love to know what your thoughts are about my blog, but unfortunately I did not learned yet how to add that.  <img src="./images/underconstruction1.gif" height="30px" width="150px" alt="Animated GIF 1" width="100px"
+											border="0">
+										</font>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+
+					<tr align="center">
+						<td>
+							<form height="1000px" action="guestbook.php" method="POST">
+								<table border="0" cellpadding="5" cellspacing="0">
+									<tr>
+										<td><b>Name:</b></td>
+										<td><input type="text" name="name" size="30" maxlength="50"></td>
+									</tr>
+									<tr>
+										<td><b>Email:</b></td>
+										<td><input type="text" name="email" size="30" maxlength="100"></td>
+									</tr>
+									<tr>
+										<td><b>Website:</b></td>
+										<td><input type="text" name="website" size="30" maxlength="100"></td>
+									</tr>
+									<tr>
+										<td valign="top"><b>Comment:</b></td>
+										<td><textarea name="comment" rows="5" cols="30"></textarea></td>
+									</tr>
+									<tr align="center">
+										<td>&nbsp;</td>
+										<!-- <td><input type="submit" value="Sign Guestbook"></td> -->
+									</tr>
+								</table>
+							</form>
+							
+						</td>
+					</tr>
+				</table>
+				<!-- <img src="./images/travelingcar2.gif" alt="Your Image Description" border="0"> -->
+			</td>
+		</tr>
+		<tr>
+			<td height="20"></td>
+		</tr>
+	</table>
+
+	<!-- Footer Table -->
+	<table id="footer" width="100%" border="1" cellpadding="10" cellspacing="0" bgcolor="#CCCCCC">
+		<tr>
+			<td align="center" valign="middle" width="33%">
+				<font face="Arial" size="2" color="#000000">Copyright © 1999 Andrei Travel</font>
+			</td>
+			<td align="center" valign="middle" width="33%">
+				<img src="./images/thank-rot.gif" height="30px" width="150px" alt="Animated GIF 1" width="100px"
+					border="0">
+
+
+			</td>
+			<td align="center" valign="middle" width="33%">
+				<table cellpadding="0" cellspacing="0">
+					<tr>
+						<td valign="middle">
+							<font face="Arial" size="2" color="#000000">
+								<a align="center" valign="middle">
+									Best to view width:
+								</a>
+							</font>
+						</td>
+						<td valign="middle">
+							<img src="./images/netnow3.gif" alt="Animated GIF 1" border="0">
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+</body>
+
+</html>

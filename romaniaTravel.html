@@ -1,0 +1,255 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<html>
+
+<head>
+	<title>Simple Web 1.0 Website</title>
+
+	<script>
+		function adjustFooter() {
+			var footer = document.getElementById("footer");
+			var content = document.getElementById("content");
+			var windowHeight = window.innerHeight;
+			var contentHeight = content.offsetHeight;
+
+			if (contentHeight < windowHeight) {
+				footer.style.position = "absolute";
+				footer.style.bottom = "10";
+				footer.style.width = "99%";
+			} else {
+				footer.style.position = "static";
+			}
+		}
+
+		window.onload = function () {
+			adjustFooter();
+		};
+
+		window.onresize = adjustFooter;
+	</script>
+</head>
+
+<body bgcolor="#8D909B">
+	<!-- Header Table -->
+	<table width="100%" border="1" cellpadding="10" cellspacing="0" bgcolor="#CCCCCC">
+		<tr>
+			<td align="center" valign="middle">
+				<img src="./images/bizzar-0world2a.gif" alt="Animated GIF 2" border="0">
+			</td>
+
+			<td align="center" valign="middle" width="33%">
+				<table cellpadding="0" cellspacing="0">
+					<tr>
+						<td align="center" valign="middle">
+							<font face="Arial" size="4" color="#000000">
+								<b>Andrei`s Travel Blog</b>
+							</font>
+						</td>
+					</tr>
+					<tr>
+						<td valign="middle">
+							<img src="./images/underconstruction3.gif" alt="Animated GIF 1" border="0">
+							<!-- <img src="./images/travelingcar2.gif" alt="Your Image Description" border="0"> -->
+
+						</td>
+					</tr>
+				</table>
+			</td>
+
+			<!-- </td> -->
+			<td align="center" valign="middle">
+				<img src="./images/bizzar-0world2a.gif" alt="Animated GIF 1" border="0">
+			</td>
+		</tr>
+	</table>
+
+	<!-- Main Content Table -->
+	<table id="content" width="100%" height="80%" cellpadding="0" cellspacing="0">
+		<tr>
+			<td height="10"></td>
+		</tr>
+		<tr align="center" valign="middle">
+			<td valign="top" width="15%">
+				<!-- Sidebar -->
+				<table valign="top" width="100%" height="100%" border="1" cellpadding="10" cellspacing="0"
+					bgcolor="#CCCCCC">
+					<tr valign="top">
+						<td align="center">
+							<font face="Arial" size="5" color="#000000">
+								<b>Menu</b><br>
+							</font>
+							<font face="Arial" size="4" color="#000000">
+								<a href="mainPage.html">
+									<table width="150" border="1" cellpadding="3" cellspacing="0" bgcolor="#008CBA">
+										<tr>
+											<td align="center" valign="middle">
+												<font face="Arial" size="3" color="#FFFFFF">
+													Home
+												</font>
+											</td>
+										</tr>
+									</table>
+								</a>
+
+								<table>
+									<tr>
+										<td height="2"></td>
+									</tr>
+								</table>
+
+
+								<a href="aboutPage.html">
+									<table width="150" border="1" cellpadding="3" cellspacing="0" bgcolor="#008CBA">
+										<tr>
+											<td align="center" valign="middle">
+												<font face="Arial" size="3" color="#FFFFFF">
+													About
+												</font>
+											</td>
+										</tr>
+									</table>
+								</a>
+
+								<table>
+									<tr>
+										<td height="350"></td>
+									</tr>
+								</table>
+
+								
+
+								<table>
+									<tr>
+										<td height="2"></td>
+									</tr>
+								</table>
+
+								<a href="signGuestBook.html">
+									<table width="150" border="1" cellpadding="3" cellspacing="0" bgcolor="#008CBA">
+										<tr>
+											<td align="center" valign="middle">
+												<font face="Arial" size="3" color="#FFFFFF">
+													<img src="./images/viewbook.gif" alt="Animated GIF 1" width="100px"
+														border="0">
+												</font>
+											</td>
+										</tr>
+									</table>
+								</a>
+
+								<table>
+									<tr>
+										<td height="2"></td>
+									</tr>
+								</table>
+
+								<a href="signGuestBook.html">
+									<table width="150" border="1" cellpadding="3" cellspacing="0" bgcolor="#008CBA">
+										<tr>
+											<td align="center" valign="middle">
+												<font face="Arial" size="3" color="#FFFFFF">
+													<img src="./images/book1.gif" alt="Animated GIF 1" width="100px"
+														border="0">
+												</font>
+											</td>
+										</tr>
+									</table>
+								</a>
+						</td>
+						</font>
+					</tr>
+				</table>
+			</td>
+			<td valign="top" width="80%">
+				<!-- Main Content -->
+				<table width="100%" cellpadding="10" cellspacing="0">
+					<tr>
+						<td>
+							<table width="100%" cellpadding="0" cellspacing="0">
+								<tr>
+									<td align="center" valign="middle">
+										<font face="Arial" size="5" color="#000000">
+											Excitement and nervousness in Romania
+										</font>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<table width="100%" cellpadding="5" cellspacing="0">
+								<tr>
+									<td width="70%">
+										<font face="Arial" size="2" color="#000000">
+											As I stepped off the plane in Bucharest, Romania, I felt a mix of excitement and nervousness. This was my first time in Eastern Europe, and I wasn't sure what to expect. But as I made my way through the airport and out onto the streets of the city, I quickly began to feel at ease.
+
+											<br>
+											<br>
+											The first thing that struck me about Romania was its stunning architecture. From the Gothic-style buildings of Brasov to the art nouveau designs of Bucharest's Old Town, every corner seemed to be adorned with beautiful and unique buildings. I found myself constantly stopping to take photos and marvel at the intricate details of each structure.
+											
+											
+											<br>
+											<br>
+
+											As I traveled around the country, I discovered that Romania has so much more to offer than just its architecture. The natural beauty of the Carpathian Mountains took my breath away, and I spent hours hiking through the forests and valleys. I also visited the painted monasteries of Bucovina, which are unlike anything I've ever seen before. The vibrant colors and intricate designs of the frescoes left me in awe.
+											
+											<br>
+											<br>
+											But what really made my trip to Romania special was the people. I found Romanians to be incredibly welcoming and friendly, always eager to share their culture and history with me. Whether I was enjoying a traditional meal of sarmale and mici at a local restaurant or chatting with locals in a village, I felt a real connection to the people of Romania.
+											
+											<br>
+											<br>
+											Of course, traveling in Romania isn't always easy. There were times when I struggled to communicate due to the language barrier, and the country's infrastructure can be a bit rough around the edges. But for me, those challenges only added to the adventure.
+											
+											<br>
+											<br>
+											Overall, I would highly recommend traveling to Romania to anyone who loves culture, history, and natural beauty. It's a country that has so much to offer, and I can't wait to go back and explore more.
+										</font>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table>
+				<!-- <img src="./images/travelingcar2.gif" alt="Your Image Description" border="0"> -->
+			</td>
+		</tr>
+		<tr>
+			<td height="20"></td>
+		</tr>
+	</table>
+
+	<!-- Footer Table -->
+	<table id="footer" width="100%" border="1" cellpadding="10" cellspacing="0" bgcolor="#CCCCCC">
+		<tr>
+			<td align="center" valign="middle" width="33%">
+				<font face="Arial" size="2" color="#000000">Copyright © 1999 Andrei Travel</font>
+			</td>
+			<td align="center" valign="middle" width="33%">
+				<img src="./images/thank-rot.gif" height="30px" width="150px" alt="Animated GIF 1" width="100px"
+					border="0">
+
+
+			</td>
+			<td align="center" valign="middle" width="33%">
+				<table cellpadding="0" cellspacing="0">
+					<tr>
+						<td valign="middle">
+							<font face="Arial" size="2" color="#000000">
+								<a align="center" valign="middle">
+									Best to view width:
+								</a>
+							</font>
+						</td>
+						<td valign="middle">
+							<img src="./images/netnow3.gif" alt="Animated GIF 1" border="0">
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+</body>
+
+</html>
